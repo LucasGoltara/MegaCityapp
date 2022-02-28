@@ -6,26 +6,40 @@ class TransparentAppBarPage extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
-          title: Text('Mega City'),
-          centerTitle: true,
-          leading: BackButton(),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.search),
-              onPressed: () {},
-            )
-          ],
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(16)),
-          ),
-          backgroundColor: Colors.transparent, // Colors.white.withOpacity(0.1),
-          elevation: 0,
+          title: Center(child: Text('Links Mega City')),
         ),
-        body: Image.network(
-          'https://cdn.discordapp.com/attachments/936306543719223387/945402045249241128/logomegacity.png',
-          fit: BoxFit.cover,
+        body: Container(
           width: double.infinity,
-          height: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton.icon(
+                icon: Icon(Icons.star),
+                label: Text('Loja Vip'),
+                onPressed: () =>
+                    _launchLink('https://five-m.store/loja/megacity'),
+              ),
+              TextButton.icon(
+                icon: Icon(Icons.link),
+                label: Text('Discord'),
+                onPressed: () => _launchLink('https://discord.gg/WBfAtNCKR2'),
+              ),
+              TextButton.icon(
+                icon: Icon(Icons.home),
+                label: Text('Instagram'),
+                onPressed: () =>
+                    _launchLink('https://www.instagram.com/megacity_oficial/'),
+              ),
+              TextButton.icon(
+                icon: Icon(Icons.link),
+                label: Text('TikTok'),
+                onPressed: () =>
+                    _launchLink('https://www.tiktok.com/@oficial_megacity.rp'),
+              ),
+            ],
+          ),
         ),
       );
+
+  _launchLink(String s) {}
 }

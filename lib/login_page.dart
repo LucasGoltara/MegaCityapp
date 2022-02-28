@@ -1,4 +1,5 @@
 import 'package:appbar_example/main.dart';
+import 'package:appbar_example/register_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -97,31 +98,27 @@ class _LoginPageState extends State<LoginPage> {
                               'Login',
                               textAlign: TextAlign.center,
                             )),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 3, right: 3, top: 2),
-                  child: Column(
-                    children: [
+                      ),
                       RaisedButton(
-                        textColor: Colors.white,
-                        color: Colors.purple,
-                        onPressed: () {},
                         child: Container(
                             width: double.infinity,
                             child: Text(
                               'Sign Up',
                               textAlign: TextAlign.center,
                             )),
-                      )
+                        textColor: Colors.white,
+                        color: Colors.purple,
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                                builder: (context) => RegisterPage()),
+                          );
+                        },
+                      ),
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
