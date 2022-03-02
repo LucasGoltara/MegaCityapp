@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Container(
                             width: double.infinity,
                             child: Text(
-                              'Login',
+                              'Entrar',
                               textAlign: TextAlign.center,
                             )),
                       ),
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Container(
                             width: double.infinity,
                             child: Text(
-                              'Sign Up',
+                              'Cadastre-se',
                               textAlign: TextAlign.center,
                             )),
                         textColor: Colors.white,

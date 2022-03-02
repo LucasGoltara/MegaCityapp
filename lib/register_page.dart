@@ -122,7 +122,7 @@ class _LoginPageState extends State<RegisterPage> {
                         child: Container(
                             width: double.infinity,
                             child: Text(
-                              'Register',
+                              'Cadastrar',
                               textAlign: TextAlign.center,
                             )),
                       ),
@@ -130,7 +130,7 @@ class _LoginPageState extends State<RegisterPage> {
                         child: Container(
                             width: double.infinity,
                             child: Text(
-                              'Back',
+                              'Voltar',
                               textAlign: TextAlign.center,
                             )),
                         textColor: Colors.white,

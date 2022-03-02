@@ -16,6 +16,11 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
             child: Column(
               children: [
                 UserAccountsDrawerHeader(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('assets/images/background.jpg')),
+                  ),
                   currentAccountPicture: ClipRRect(
                     borderRadius: BorderRadius.circular(40),
                     child: Image.network(
@@ -30,43 +35,45 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
                   title: Text('Inicio'),
                   subtitle: Text('tela de inicio'),
                   onTap: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed('/simple_appbar_page.dart');
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => MainPage()),
+                    );
                   },
                 ),
                 ListTile(
                   leading: Icon(Icons.favorite),
-                  title: Text('Favorites'),
+                  title: Text('Favoritos'),
                   //subtitle: Text('tela de inicio'),
                   onTap: () {},
                 ),
                 ListTile(
                   leading: Icon(Icons.person),
-                  title: Text('Friends'),
+                  title: Text('Amigos'),
                   //subtitle: Text('tela de inicio'),
                   onTap: () {},
                 ),
                 ListTile(
                   leading: Icon(Icons.description),
-                  title: Text('Policies'),
+                  title: Text('Políticas'),
                   //subtitle: Text('tela de inicio'),
                   onTap: () {},
                 ),
                 ListTile(
                   leading: Icon(Icons.notifications),
-                  title: Text('Request'),
+                  title: Text('Solicitação'),
                   //subtitle: Text('tela de inicio'),
                   onTap: () {},
                 ),
                 ListTile(
                   leading: Icon(Icons.settings),
-                  title: Text('settings'),
+                  title: Text('Configurações'),
                   //subtitle: Text('tela de inicio'),
+
                   onTap: () {},
                 ),
                 ListTile(
                   leading: Icon(Icons.exit_to_app),
-                  title: Text('Exit'),
+                  title: Text('Sair'),
                   subtitle: Text('Finalizar Sessão'),
                   onTap: () {
                     Navigator.of(context).pushReplacementNamed('/');
@@ -78,10 +85,6 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
           appBar: AppBar(
             title: Text('Mega city'),
             centerTitle: true,
-            //leading: IconButton(
-            //icon: Icon(Icons.menu),
-            //onPressed: () {},
-            //),
             actions: [
               IconButton(
                 icon: Icon(Icons.notifications_none),
@@ -102,28 +105,28 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
                 ),
               ),
             ),
-            bottom: TabBar(
-              //isScrollable: true,
-              indicatorColor: Colors.white,
-              indicatorWeight: 5,
-              tabs: [
-                Tab(icon: Icon(Icons.home), text: 'Home'),
-                Tab(icon: Icon(Icons.star), text: 'Feed'),
-                Tab(icon: Icon(Icons.link), text: 'Links'),
-                Tab(icon: Icon(Icons.settings), text: 'Settings'),
-              ],
-            ),
+            // bottom: TabBar(
+            //   //isScrollable: true,
+            //   indicatorColor: Colors.white,
+            //   indicatorWeight: 5,
+            //   tabs: [
+            //     Tab(icon: Icon(Icons.home), text: 'Home'),
+            //     Tab(icon: Icon(Icons.star), text: 'Feed'),
+            //     Tab(icon: Icon(Icons.link), text: 'Links'),
+            //     Tab(icon: Icon(Icons.settings), text: 'Settings'),
+            //   ],
+            // ),
             elevation: 20,
             titleSpacing: 20,
           ),
-          body: TabBarView(
-            children: [
-              buildPage('Home Page'),
-              buildPage('Feed Page'),
-              buildPage('Links Mega City'),
-              buildPage('Settings Page'),
-            ],
-          ),
+          // body: TabBarView(
+          //   children: [
+          //     buildPage('Home Page'),
+          //     buildPage('Feed Page'),
+          //     buildPage('Links Mega City'),
+          //     buildPage('Settings Page'),
+          //   ],
+          // ),
         ),
       );
 
