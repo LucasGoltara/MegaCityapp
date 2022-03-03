@@ -85,9 +85,9 @@ class _LoginPageState extends State<RegisterPage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
-                          keyboardType: TextInputType.emailAddress,
+                          keyboardType: TextInputType.datetime,
                           decoration: InputDecoration(
-                            labelText: 'Discord',
+                            labelText: 'Celular',
                             border: OutlineInputBorder(),
                           ),
                         ),

@@ -30,7 +30,7 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
                   accountEmail: Text('megacity@gmail.com'),
                 ),
                 ListTile(
-                  //Icones do drawer
+                  // Todos os icones do drawer
                   leading: Icon(Icons.home),
                   title: Text('Inicio'),
                   subtitle: Text('tela de inicio'),
@@ -105,28 +105,28 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
                 ),
               ),
             ),
-            // bottom: TabBar(
-            //   //isScrollable: true,
-            //   indicatorColor: Colors.white,
-            //   indicatorWeight: 5,
-            //   tabs: [
-            //     Tab(icon: Icon(Icons.home), text: 'Home'),
-            //     Tab(icon: Icon(Icons.star), text: 'Feed'),
-            //     Tab(icon: Icon(Icons.link), text: 'Links'),
-            //     Tab(icon: Icon(Icons.settings), text: 'Settings'),
-            //   ],
-            // ),
+            bottom: TabBar(
+              //isScrollable: true,
+              indicatorColor: Colors.white,
+              indicatorWeight: 5,
+              tabs: [
+                Tab(icon: Icon(Icons.home), text: 'Home'),
+                Tab(icon: Icon(Icons.star), text: 'Feed'),
+                Tab(icon: Icon(Icons.bolt), text: 'VIP News'),
+                Tab(icon: Icon(Icons.update), text: 'Updates'),
+              ],
+            ),
             elevation: 20,
             titleSpacing: 20,
           ),
-          // body: TabBarView(
-          //   children: [
-          //     buildPage('Home Page'),
-          //     buildPage('Feed Page'),
-          //     buildPage('Links Mega City'),
-          //     buildPage('Settings Page'),
-          //   ],
-          // ),
+          body: TabBarView(
+            children: [
+              buildPage('Home Page '),
+              buildPage('Feed de noticias'),
+              buildPage('Novidades da loja vip '),
+              buildPage('Atualizações no servidor'),
+            ],
+          ),
         ),
       );
 

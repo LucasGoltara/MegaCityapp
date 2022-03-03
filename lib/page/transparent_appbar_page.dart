@@ -9,6 +9,11 @@ class TransparentAppBarPage extends StatelessWidget {
           title: Center(child: Text('Links Mega City')),
         ),
         body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage('assets/images/cidadeanimada.jpg')),
+          ),
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
