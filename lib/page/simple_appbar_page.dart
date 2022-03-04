@@ -83,7 +83,7 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
             ),
           ),
           appBar: AppBar(
-            title: Text('Mega city'),
+            title: Text('Mega City'),
             centerTitle: true,
             actions: [
               IconButton(
@@ -121,7 +121,17 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
           ),
           body: TabBarView(
             children: [
-              buildPage('Home Page '),
+              Column(
+                children: [
+                  Center(
+                      child: Container(
+                    width: 150,
+                    height: 150,
+                    child: Image.network(
+                        'https://cdn.discordapp.com/attachments/936306543719223387/945340404868481024/logomegacity-removebg-preview.png'),
+                  ))
+                ],
+              ),
               buildPage('Feed de noticias'),
               buildPage('Novidades da loja vip '),
               buildPage('Atualizações no servidor'),
