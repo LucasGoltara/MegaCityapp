@@ -121,16 +121,16 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
           ),
           body: TabBarView(
             children: [
-              Column(
-                children: [
-                  Center(
-                      child: Container(
-                    width: 150,
-                    height: 150,
-                    child: Image.network(
-                        'https://cdn.discordapp.com/attachments/936306543719223387/945340404868481024/logomegacity-removebg-preview.png'),
-                  ))
-                ],
+              Scaffold(
+                backgroundColor: Colors.tealAccent,
+                body: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/homepage.png"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ),
               buildPage('Feed de noticias'),
               buildPage('Novidades da loja vip '),

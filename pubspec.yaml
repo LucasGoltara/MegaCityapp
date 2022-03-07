@@ -26,6 +26,8 @@ flutter:
     - assets/images/background.jpg
     - assets/images/logomegacity.png
     - assets/images/cidadeanimada.jpg
+    - assets/images/homepage.png
+
 
 Fonts:
   - family: Roboto
