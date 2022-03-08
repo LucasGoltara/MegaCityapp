@@ -35,118 +35,120 @@ class _LoginPageState extends State<RegisterPage> {
         height: MediaQuery.of(context).size.height,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 150,
-                height: 150,
-                child: Image.asset('assets/images/logo.png'),
-              ),
-              Container(
-                height: 10,
-              ),
-              Card(
-                child: Padding(
-                  padding: const EdgeInsets.all(2.0),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          keyboardType: TextInputType.name,
-                          decoration: InputDecoration(
-                            labelText: 'Nome Completo',
-                            border: OutlineInputBorder(),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  child: Image.asset('assets/images/logo.png'),
+                ),
+                Container(
+                  height: 10,
+                ),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            keyboardType: TextInputType.name,
+                            decoration: InputDecoration(
+                              labelText: 'Nome Completo',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          keyboardType: TextInputType.emailAddress,
-                          decoration: InputDecoration(
-                            labelText: 'Email',
-                            border: OutlineInputBorder(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            keyboardType: TextInputType.emailAddress,
+                            decoration: InputDecoration(
+                              labelText: 'Email',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          keyboardType: TextInputType.datetime,
-                          decoration: InputDecoration(
-                            labelText: 'Data de Nascimento',
-                            border: OutlineInputBorder(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            keyboardType: TextInputType.datetime,
+                            decoration: InputDecoration(
+                              labelText: 'Data de Nascimento',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(height: 10),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          keyboardType: TextInputType.datetime,
-                          decoration: InputDecoration(
-                            labelText: 'Celular',
-                            border: OutlineInputBorder(),
+                        SizedBox(height: 10),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            keyboardType: TextInputType.datetime,
+                            decoration: InputDecoration(
+                              labelText: 'Celular',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          obscureText: true,
-                          keyboardType: TextInputType.visiblePassword,
-                          decoration: InputDecoration(
-                            labelText: 'Senha',
-                            border: OutlineInputBorder(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            obscureText: true,
+                            keyboardType: TextInputType.visiblePassword,
+                            decoration: InputDecoration(
+                              labelText: 'Senha',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: TextField(
-                          obscureText: true,
-                          keyboardType: TextInputType.visiblePassword,
-                          decoration: InputDecoration(
-                            labelText: 'Comfirmar Senha',
-                            border: OutlineInputBorder(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextField(
+                            obscureText: true,
+                            keyboardType: TextInputType.visiblePassword,
+                            decoration: InputDecoration(
+                              labelText: 'Comfirmar Senha',
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(height: 15),
-                      RaisedButton(
-                        textColor: Colors.white,
-                        color: Colors.purple,
-                        onPressed: () {},
-                        child: Container(
-                            width: double.infinity,
-                            child: Text(
-                              'Cadastrar',
-                              textAlign: TextAlign.center,
-                            )),
-                      ),
-                      RaisedButton(
-                        child: Container(
-                            width: double.infinity,
-                            child: Text(
-                              'Voltar',
-                              textAlign: TextAlign.center,
-                            )),
-                        textColor: Colors.white,
-                        color: Colors.purple,
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(
-                                builder: (context) => LoginPage()),
-                          );
-                        },
-                      ),
-                    ],
+                        SizedBox(height: 15),
+                        RaisedButton(
+                          textColor: Colors.white,
+                          color: Colors.purple,
+                          onPressed: () {},
+                          child: Container(
+                              width: double.infinity,
+                              child: Text(
+                                'Cadastrar',
+                                textAlign: TextAlign.center,
+                              )),
+                        ),
+                        RaisedButton(
+                          child: Container(
+                              width: double.infinity,
+                              child: Text(
+                                'Voltar',
+                                textAlign: TextAlign.center,
+                              )),
+                          textColor: Colors.white,
+                          color: Colors.purple,
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => LoginPage()),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

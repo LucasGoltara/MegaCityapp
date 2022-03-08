@@ -35,7 +35,7 @@ class TransparentAppBarPage extends StatelessWidget {
                 label: Text(
                   'Loja Vip',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.yellow,
                     fontSize: 40,
                   ),
                 ),
@@ -49,7 +49,7 @@ class TransparentAppBarPage extends StatelessWidget {
                 ),
                 label: Text(
                   'Discord',
-                  style: TextStyle(color: Colors.white, fontSize: 40),
+                  style: TextStyle(color: Colors.blue, fontSize: 40),
                 ),
                 onPressed: () => _launchLink('https://discord.gg/WBfAtNCKR2'),
               ),
@@ -60,7 +60,10 @@ class TransparentAppBarPage extends StatelessWidget {
                 ),
                 label: Text(
                   'Instagram',
-                  style: TextStyle(color: Colors.white, fontSize: 40),
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 40,
+                  ),
                 ),
                 onPressed: () =>
                     _launchLink('https://www.instagram.com/megacity_oficial/'),
@@ -68,11 +71,12 @@ class TransparentAppBarPage extends StatelessWidget {
               TextButton.icon(
                 icon: Icon(
                   FontAwesome.music,
-                  color: Colors.orange,
+                  color: Colors.greenAccent[700],
                 ),
                 label: Text(
                   'TikTok',
-                  style: TextStyle(color: Colors.white, fontSize: 40),
+                  style:
+                      TextStyle(color: Colors.greenAccent[700], fontSize: 40),
                 ),
                 onPressed: () =>
                     _launchLink('https://www.tiktok.com/@oficial_megacity.rp'),

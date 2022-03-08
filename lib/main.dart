@@ -1,5 +1,5 @@
-import 'package:appbar_example/page/simple_appbar_page.dart';
-import 'package:appbar_example/page/transparent_appbar_page.dart';
+import 'package:appbar_example/home/simple_appbar_page.dart';
+import 'package:appbar_example/home/transparent_appbar_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
