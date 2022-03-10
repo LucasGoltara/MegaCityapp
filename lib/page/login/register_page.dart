@@ -124,6 +124,8 @@ class _LoginPageState extends State<RegisterPage> {
                               width: double.infinity,
                               child: Text(
                                 'Cadastrar',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 19),
                                 textAlign: TextAlign.center,
                               )),
                         ),
@@ -132,6 +134,8 @@ class _LoginPageState extends State<RegisterPage> {
                               width: double.infinity,
                               child: Text(
                                 'Voltar',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 19),
                                 textAlign: TextAlign.center,
                               )),
                           textColor: Colors.white,

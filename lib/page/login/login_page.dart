@@ -1,6 +1,9 @@
+import 'dart:html';
+
 import 'package:appbar_example/main.dart';
 import 'package:appbar_example/page/login/register_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -46,9 +49,6 @@ class _LoginPageState extends State<LoginPage> {
                 width: 300,
                 height: 300,
                 child: Image.asset('assets/images/logo.png'),
-              ),
-              Container(
-                height: 10,
               ),
               Card(
                 child: Padding(
@@ -96,6 +96,8 @@ class _LoginPageState extends State<LoginPage> {
                             width: double.infinity,
                             child: Text(
                               'Entrar',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
                               textAlign: TextAlign.center,
                             )),
                       ),
@@ -104,6 +106,8 @@ class _LoginPageState extends State<LoginPage> {
                             width: double.infinity,
                             child: Text(
                               'Cadastre-se',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
                               textAlign: TextAlign.center,
                             )),
                         textColor: Colors.white,
@@ -119,15 +123,21 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
+              TextButton.icon(
+                icon: Icon(
+                  FontAwesome.home,
+                  color: Colors.white,
+                ),
+                label: Text(
+                  'Esqueceu a senha ?',
+                  style: TextStyle(color: Colors.white, fontSize: 17),
+                ),
+                onPressed: () {},
+              ),
             ],
           ),
         ),
       ),
     );
   }
-
-  HomePage() {}
-  Main() {}
 }
-
-myapp() {}
