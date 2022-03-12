@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:appbar_example/main.dart';
 import 'package:appbar_example/page/login/register_page.dart';
 import 'package:flutter/material.dart';
