@@ -27,20 +27,23 @@ class TransparentAppBarPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextButton.icon(
-                icon: Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                ),
-                label: Text(
-                  'Loja Vip',
-                  style: TextStyle(
+              Padding(
+                padding: const EdgeInsets.only(top: 100),
+                child: TextButton.icon(
+                  icon: Icon(
+                    Icons.star,
                     color: Colors.yellow,
-                    fontSize: 40,
                   ),
+                  label: Text(
+                    'Loja Vip',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                    ),
+                  ),
+                  onPressed: () =>
+                      _launchLink('https://five-m.store/loja/megacity'),
                 ),
-                onPressed: () =>
-                    _launchLink('https://five-m.store/loja/megacity'),
               ),
               TextButton.icon(
                 icon: Icon(
@@ -49,7 +52,7 @@ class TransparentAppBarPage extends StatelessWidget {
                 ),
                 label: Text(
                   'Discord',
-                  style: TextStyle(color: Colors.blue, fontSize: 40),
+                  style: TextStyle(color: Colors.white, fontSize: 40),
                 ),
                 onPressed: () => _launchLink('https://discord.gg/WBfAtNCKR2'),
               ),
@@ -61,7 +64,7 @@ class TransparentAppBarPage extends StatelessWidget {
                 label: Text(
                   'Instagram',
                   style: TextStyle(
-                    color: Colors.red,
+                    color: Colors.white,
                     fontSize: 40,
                   ),
                 ),
@@ -75,8 +78,7 @@ class TransparentAppBarPage extends StatelessWidget {
                 ),
                 label: Text(
                   'TikTok',
-                  style:
-                      TextStyle(color: Colors.greenAccent[700], fontSize: 40),
+                  style: TextStyle(color: Colors.white, fontSize: 40),
                 ),
                 onPressed: () =>
                     _launchLink('https://www.tiktok.com/@oficial_megacity.rp'),
@@ -84,7 +86,7 @@ class TransparentAppBarPage extends StatelessWidget {
               TextButton.icon(
                 icon: Icon(
                   Icons.email,
-                  color: Colors.white,
+                  color: Colors.pink[300],
                 ),
                 label: Text(
                   'Email',

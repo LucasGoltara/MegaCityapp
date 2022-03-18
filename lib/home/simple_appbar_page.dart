@@ -134,9 +134,94 @@ class _SimpleAppBarPageState extends State<SimpleAppBarPage> {
                   ),
                 ),
               ),
-              buildPage('Feed de noticias'),
-              buildPage('Novidades da loja vip '),
-              buildPage('Atualizações no servidor'),
+              Column(
+                children: [
+                  Container(child: buildPage('')),
+                ],
+              ),
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 70),
+                    child: Image(
+                      image: NetworkImage(
+                          'https://cs1.gtaall.com.br/screenshots/5a9f9/2019-01/original/f932b9a3babacd832edc86d2b663030be0c4aad2/708133-gallery1.jpg'),
+                      width: 380,
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: buildPage(' Nissan GTR R35'),
+                      )),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Text(
+                          'Disponivel hoje na sua loja vip o novo GTR, carro esportivo de otimo designer e com muitas alterações em tuning.',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Divider(
+                          height: 15,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Text(
+                      'Novas Atualizações',
+                      style: TextStyle(
+                        fontSize: 30,
+                      ),
+                    ),
+                  ),
+                  Container(child: buildPage('')),
+                  Text(
+                    '* ADICIONADO SISTEMA DE /HORAS',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, left: 30),
+                    child: Text(
+                      '* AJUSTADO O SISTEMA DE FARME E VALORES DE PRODUTOS DE TODAS FACS',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, right: 60),
+                    child: Text(
+                      '* CONCESSÓRIO ATUALIZADA',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Image(
+                      image: NetworkImage(
+                          'https://cdn.discordapp.com/attachments/936306543719223387/945340404868481024/logomegacity-removebg-preview.png'),
+                      height: 250,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
